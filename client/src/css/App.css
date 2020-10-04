@@ -1,0 +1,212 @@
+:root {
+    font-size: 62.5%;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    background-color: #ff9966;
+}
+
+/* Navbar links on mouse-over */
+.navbar span:hover {
+    background-color: #ff9966;
+    cursor: pointer;
+}
+
+/* Navbar spans */
+.navbarSpan {
+    float: left;
+    text-align: center;
+    padding: 1.3rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: "Sofia";
+    background-color: transparent;
+}
+
+/* Current/active navbar link */
+.active {
+    background-color: #47c7f0;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbarSpan {
+        float: none;
+        display: block;
+    }
+}
+
+/* Background Image */
+body {
+    background-image: url("https://wallpaperaccess.com/full/1251284.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Logo */
+.name {
+    font-size: 8rem;
+    font-weight: 500;
+    font-family: "sofia";
+    color: #e88252;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background: radial-gradient(#47c7f0, #99ccff); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    width: 250px;
+}
+
+/* The navigation menu links */
+.sidenav-links {
+    text-decoration: none;
+    color: #242222;
+    display: block;
+    transition: 0.3s;
+    text-align: right;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav-links:hover {
+    color: #f1f1f167;
+    cursor: pointer;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+.main {
+    transition: margin-right 0.5s;
+    padding: 20px;
+    opacity: 0.85;
+}
+
+.main-with-sidebar {
+    margin-left: 250px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Login form */
+form {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Sofia";
+}
+
+h2 {
+    text-align: center;
+    font-size: 6rem;
+    color: #e88252;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#loginButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.password {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.password {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* Intro */
+#introBox {
+    background-color: antiquewhite;
+    text-align: left;
+    margin-top: 5rem;
+    margin-bottom: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.introText {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    letter-spacing: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    color: #808080;
+    text-indent: 5rem;
+}
+
+#signature {
+    float: right;
+    font-family: "Sofia";
+}
+
+#signup-tnc-url {
+    color: "dodgerblue";
+}
+
+#remember-label {
+    margin-bottom: 20px;
+}

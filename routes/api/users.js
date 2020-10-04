@@ -14,8 +14,6 @@ const router = express.Router();
 // @access Public
 router.get("/test", (req, res) => res.json("User works!"));
 
-router.get("/login", (req, res) => res.json("Login page front end goes here!"));
-
 // @route GET api/users/register
 // @desc Register new user
 // @access Public

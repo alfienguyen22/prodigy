@@ -4,7 +4,7 @@
 /* Style the navigation bar */
 .navbar {
     width: 100%;
-    background-color: #eb8f85;
+    background-color: #4f9959;
     overflow: auto;
   }
   
@@ -39,7 +39,7 @@
   
 /* Background Image */
 body {
-    background-image: url('https://wallpaperaccess.com/full/1251284.jpg');
+    background: linear-gradient(#f5dfd0, #f6e7cd);
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -50,7 +50,7 @@ body {
     font-size: 8rem;
     font-weight: 500;
     font-family: 'sofia';
-    color: #e88252;
+    color: #2b4fc4;
     text-align: center;
     text-decoration: none;
     margin-top: 0px;

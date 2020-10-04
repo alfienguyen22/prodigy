@@ -1,0 +1,49 @@
+/* Style the "Create account" page */
+
+body {
+    padding: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.signup-cancel-btn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.signup-submit-btn {
+    background-color: #4caf50;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signup-cancel-btn,
+.signup-submit-btn {
+    float: left;
+    width: 50%;
+}
+
+.form-container {
+    opacity: 0.8;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
