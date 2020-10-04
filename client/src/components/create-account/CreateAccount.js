@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
+import { registerUser } from "../../actions/authActions";
 import TextFieldGroup from "../common/TextFieldGroup";
 
 import "../../css/CreateAccount.css";
@@ -9,6 +13,7 @@ class CreateAccount extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            name: "",
             email: "",
             username: "",
             password: "",
@@ -25,7 +30,21 @@ class CreateAccount extends Component {
 
     onSubmit(e) {
         e.preventDefault();
-        console.log("TODO: Handle submitting form");
+        const new_user_data = {
+            name: this.state.name,
+            email: this.state.email,
+            username: this.state.username,
+            password: this.state.password,
+            password2: this.state.password2,
+        };
+        console.log("New user: ", new_user_data);
+        this.props.registerUser(new_user_data, this.props.history);
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.errors) {
+            this.setState({ errors: nextProps.errors });
+        }
     }
 
     render() {
@@ -37,6 +56,14 @@ class CreateAccount extends Component {
                     <p>Điền thông tin để đăng ký tài khoản.</p>
                     <hr />
                     <small className="d-block pb-3">* yêu cầu</small>
+                    <TextFieldGroup
+                        placeholder="* Họ và Tên của bạn"
+                        name="name"
+                        value={this.state.name}
+                        onChange={this.onChange}
+                        error={errors.name}
+                        info="Họ và Tên"
+                    />
                     <TextFieldGroup
                         placeholder="* Email của bạn"
                         name="email"
@@ -64,10 +91,10 @@ class CreateAccount extends Component {
                     />
                     <TextFieldGroup
                         placeholder="* Xác nhận lại"
-                        name="password"
-                        value={this.state.password}
+                        name="password2"
+                        value={this.state.password2}
                         onChange={this.onChange}
-                        error={errors.password}
+                        error={errors.password2}
                         info="Xác nhận lại mật khẩu"
                         type="password"
                     />
@@ -86,10 +113,10 @@ class CreateAccount extends Component {
                         .
                     </p>
                     <div className="clearfix">
-                        <button type="button" className="signup-cancel-btn">
+                        <Link to="/" className="cancel-btn">
                             Huỷ
-                        </button>
-                        <button type="submit" className="signup-submit-btn">
+                        </Link>
+                        <button type="submit" className="submit-btn">
                             Đăng Ký
                         </button>
                     </div>
@@ -99,4 +126,15 @@ class CreateAccount extends Component {
     }
 }
 
-export default CreateAccount;
+CreateAccount.propTypes = {
+    registerUser: PropTypes.func.isRequired,
+};
+
+// Get state in component
+const mapStateToProps = (state) => ({
+    errors: state.errors,
+});
+
+export default connect(mapStateToProps, { registerUser })(
+    withRouter(CreateAccount)
+);

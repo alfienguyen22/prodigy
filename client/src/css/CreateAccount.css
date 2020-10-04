@@ -10,34 +10,41 @@ input[type="password"]:focus {
     outline: none;
 }
 
-button {
-    color: white;
+.cancel-btn:hover,
+.submit-btn:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancel-btn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.submit-btn {
+    background-color: #4caf50;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancel-btn,
+.submit-btn {
+    float: left;
+    width: 50%;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     opacity: 0.9;
+    text-align: center;
 }
 
-button:hover {
-    opacity: 1;
+.cancel-btn {
+    color: black;
 }
 
-/* Extra styles for the cancel button */
-.signup-cancel-btn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
-.signup-submit-btn {
-    background-color: #4caf50;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.signup-cancel-btn,
-.signup-submit-btn {
-    float: left;
-    width: 50%;
+.cancel-btn:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .form-container {
