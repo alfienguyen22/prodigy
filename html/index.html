@@ -6,20 +6,40 @@
     <title>Prodigy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="prodigy.css">
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,200&display=swap" rel="stylesheet">
+  </head>
 
 <body>
-    <div id="main">
-        <h1 class="name">Prodigy</h1>
         <div class="navbar">
-            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Trang Chủ</a>
-            <a href="search.html"><i class="fa fa-fw fa-search"></i> Tìm Kiếm</a>
-            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Liên Hệ</a>
-        <span onclick="openNav()">
-          <a href="#"><i class="fa fa-fw fa-user"></i> Đăng Nhập</a>
-        </span>
+          <div class="dropdown">
+            <button class="dropbtn">Bài Đọc
+              <i class="fa fa-caret-down"></i>
+            </button>
+              <div class="dropdown-content">
+                <a href="#">Động Vật</a>
+                <a href="#">Địa Lí</a>
+                <a href="#">Khoa Học</a>
+                <a href="#">Lịch Sử Nước Mỹ</a>
+                <a href="#">Sức Khoẻ</a>
+                <a href="#">Truyện Cổ Tích</a>
+                <a href="#">Truyện Lịch Sử</a>
+                <a href="#">Cuộc Sống Thường Ngày</a>
+                <a href="#">Phiêu Lưu/Huyền Bí</a>
+                <a href="#">Hư Cấu</a>
+              </div>
+          </div>
+        <input type="text" placeholder="Search..">
+          <div class="navbar-center">
+          <a href="#home">PRODIGY</a>
+          </div>
+          <div class="navbar-right">
+           <a href="#login">Đăng Nhập</a>
+           <a href="signup.html">Đăng Ký</a>
+          </div>
         </div>
+    
 
       <!-- Use any element to open the sidenav -->
       <!-- <span onclick="openNav()">open</span> -->
@@ -48,6 +68,14 @@
                 </div>
             </form>
         </div>
+      <div id="dashboard">
+        <img src="https://cdn.discordapp.com/attachments/751718614641541140/764511280282730536/unknown.png" width="500px" height="500px">
+        <p7> Trang bị cho bé nền tảng <br> đọc hiểu tốt.<br> Tại nhà <br> <p8>Bắt đầu từ:</p8><br>
+          <button class="btn success">Lớp 1</button>
+          <button class="btn info">Lớp 2</button>
+          <button class="btn warning">Lớp 3</button>
+        </p7>
+      </div>
       <br>
       <br>
       <br>
@@ -59,18 +87,18 @@
           <br> <br>
         </div>
 
-        <div id="introText2">
+        <div id="introText">
           <p3>Các bài đọc được thiết kế ngắn gọn, dễ hiểu, đồng thời lồng ghép những câu hỏi dựa trên quy tắc phân loại của Bloom nhằm giúp các bạn nhỏ từng bước rèn luyện kỹ năng đọc hiểu, mở rộng vốn từ… Đây chính là tiền đề cho việc phát triển ngôn ngữ và hiểu biết sâu rộng cho các em sau này.</p3>
           <br><br>
         </div>
 
-        <div id="introText3">
+        <div id="introText">
           <p4>Các em hãy tự tìm hiểu và khám phá Prodigy cùng với bố mẹ nhé! Và hãy tự đặt ra cho mình mục tiêu mỗi ngày “chinh phục" tối thiểu 1-2 bài đọc được không nào?</p4>
-        </div>
-
         <br>
         <div id="signature">
           <a href="about.html">Team Prodigians</a>
+        </div>
+        <br>
         </div>
         <br> <br>
     </div>
