@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prodigy</title>
+    <title>TimeTurner</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="prodigy.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2824c4b22.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-<body>
+  <body>
         <div class="navbar">
           <div class="dropdown">
-            <button class="dropbtn">Bài Đọc
+            <button class="dropbtn"><i class="fas fa-atom"></i>
+              Bài Đọc
               <i class="fa fa-caret-down"></i>
             </button>
+            <!-- <p4> Tìm Kiếm <i class="fas fa-search"> </i> </p4> -->
               <div class="dropdown-content">
                 <a href="#">Động Vật</a>
                 <a href="#">Địa Lí</a>
@@ -29,57 +33,89 @@
                 <a href="#">Phiêu Lưu/Huyền Bí</a>
                 <a href="#">Hư Cấu</a>
               </div>
+              
           </div>
+          
         <input type="text" placeholder="Search..">
           <div class="navbar-center">
-          <a href="#home">PRODIGY</a>
+          <a href="#home">TimeTurner <i class="far fa-hourglass"></i></a>
           </div>
           <div class="navbar-right">
            <a href="#login">Đăng Nhập</a>
            <a href="signup.html">Đăng Ký</a>
           </div>
         </div>
-    
 
-      <!-- Use any element to open the sidenav -->
-      <!-- <span onclick="openNav()">open</span> -->
-
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <form action="/action_page.php" method="post">
-            <h2>Đăng Nhập</h2>
-                <div class="container">
-                    <label for="uname"><b>Tên Đăng Nhập</b></label>
-                    <input type="text" placeholder="Nhập tên" name="uname" required> <br>
-
-                    <label for="psw"><b>Mật Khẩu</b></label>
-                    <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
-
-                    <button type="submit">Đăng Nhập</button>
-
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-
-                <div class="container">
-                    <span class="psw"><a href="#"> Quên Mật Khẩu? </a></span><br><br>
-                    <a href="signup.html">Đăng Ký Ngay!</a>
-                </div>
-            </form>
-        </div>
       <div id="dashboard">
-        <img src="https://cdn.discordapp.com/attachments/751718614641541140/764511280282730536/unknown.png" width="500px" height="500px">
-        <p7> Trang bị cho bé nền tảng <br> đọc hiểu tốt.<br> Tại nhà <br> <p8>Bắt đầu từ:</p8><br>
+        <img src="https://cdn.discordapp.com/attachments/751718614641541140/764511280282730536/unknown.png" style="width: 36%;">
+        <p7> Đọc để thay đổi bản thân. <br> <p8>Bắt đầu từ:</p8><br>
           <button class="btn success">Lớp 1</button>
           <button class="btn info">Lớp 2</button>
           <button class="btn warning">Lớp 3</button>
         </p7>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="arrow-down">
+        <a href="#why-us">
+          <i class="fas fa-angle-double-down fa-7x"></i>
+          </a>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
+    </div>
+
+  <!-- Why TimeTurner -->
+  <div id="why-us">
+    <h3 style="text-align:center">Why TimeTurner?</h3>
+<div class="row">
+  
+  <div class="column">
+    <div class="card">
+      <p5><i class="far fa-clock fa-3x"></i></p5>
+      <div class="container">
+        <p6>Tiết kiệm thời gian</p6>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p5><i class="fas fa-book-reader fa-3x"></i></p5>
+      <div class="container">
+        <p6>Rèn luyện kỹ năng đọc hiểu cho bé</p6>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p5><i class="fas fa-shapes fa-3x"></i></p5>
+      <div class="container">
+        <p6>Bài đọc phong phú</p6>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p5><i class="fab fa-envira fa-3x"></i></p5>
+      <div class="container">
+        <p6>Thân thiện với người dùng</p6>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+
+
+  <!-- Intro-->
+  <div id="intro">
+    <div id="arrow-up">
+      <a href="#intro">
+      <i class="fas fa-angle-double-down fa-7x"></i>
+      </a>
+    </div>
       <div id="introBox">
         <br>
         <div id="introText">
@@ -96,13 +132,17 @@
           <p4>Các em hãy tự tìm hiểu và khám phá Prodigy cùng với bố mẹ nhé! Và hãy tự đặt ra cho mình mục tiêu mỗi ngày “chinh phục" tối thiểu 1-2 bài đọc được không nào?</p4>
         <br>
         <div id="signature">
-          <a href="about.html">Team Prodigians</a>
+          <a href="about.html">Team TimeTurner</a>
         </div>
         <br>
         </div>
         <br> <br>
-    </div>
-    </div>
-        <script src="home.js"></script>
+      </div>
+  </div>
+
+  <footer>
+    <p9>A Team TimeTurner Production|2020 &#169;<br>
+    <a href="mailto:timeturner@gmail.com">timeturner@gmail.com</a></p9>
+  </footer>
 </body>
 </html>

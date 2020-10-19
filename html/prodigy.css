@@ -1,18 +1,26 @@
 :root {
     font-size: 62.5%;
+    color:black;
 }
+
 /* Style the navigation bar */
 .navbar {
     width: 100%;
-    background-color: #4abdac;
+    /* background-color: #4abdac; */
     overflow: hidden;
-    color: #242222;
+    color: white;
+    background-image: url("https://image.freepik.com/free-photo/wooden-texture_1208-334.jpg");
+    margin:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   
   /* Navbar links */
   .navbar a {
     float: left;
-    color: #242222;
+    /* color: #242222; */
+    color:white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -22,7 +30,7 @@
   
   /* Navbar links on mouse-over */
   .navbar a:hover {
-    color: black;
+    color: grey;
   }
   
   /* Current/active navbar link */
@@ -31,13 +39,22 @@
     color: #242222;
   }
 
+  .navbar-center a:hover{
+    color:white;
+  }
   .navbar-center a {
     float: none;
     position: absolute;
-    left: 45%;
+    left: 42%;
     font-size: 3rem;
     font-family: 'Merriweather', serif;
     text-align: center;
+  }
+
+  .navbar-center :hover{
+    font-size: 3.4rem;
+    left: 41%;
+    color:white;
   }
 
 
@@ -58,7 +75,8 @@
   border: none;
   outline: none;
   padding: 14px 16px;
-  color: #242222;
+  /* color: #242222; */
+  color: whitesmoke;
   background-color: inherit;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -106,13 +124,13 @@
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
 }
 
 /* When the input field gets focus, change its width to 100% */
 .navbar input[type=text]:focus {
-  width: 20%;
+  width: 30.4%;
 }
 
 .navbar input[type=text] {
@@ -128,9 +146,21 @@
   }
 
 /* Background Image */
-body {
-    background-color: white;
+body{
+  margin: auto;
+  background-image: url("https://image.freepik.com/free-photo/wooden-texture_1208-334.jpg");   
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#dashboard {
+  color:white;
+  /* background-color: #F5D47F; */
   }
+
+#intro{
+  padding-top: 5rem;
+}
 
 /* The side navigation menu */
 .sidenav {
@@ -229,13 +259,19 @@ span.psw {
 
 /* Intro */
 #introBox{
-    background-color: #dfdce3;
+    width: auto;
+    border: none;
+    padding: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: none;
+    padding-top: 4rem;
+    background-image: url("https://media.istockphoto.com/photos/old-dirty-paper-texture-picture-id1133497899?k=6&m=1133497899&s=612x612&w=0&h=t0S9kN_X6YtYpq-ODVfZNWPTDNnosHgZy8z-oynj7zg=");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: left;
-    margin-top: 5rem;
-    margin-bottom: 20rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    text-decoration: none;
+    opacity: 0.9;
 }
 
 #introText{
@@ -248,6 +284,7 @@ span.psw {
     color:black;
     text-indent: 5rem;
     text-shadow: #f9f9f9;
+    
 }
 
 #signature{
@@ -269,14 +306,15 @@ img{
 p7{
   float: right;
   font-size: 4rem;
-  margin-top: 10rem;
+  margin-top: 20rem;
   margin-right: 18rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', serif;
   font-weight: bold;
 }
 
 p8{
   font-size: 2rem;
+  font-family: 'Merriweather', serif;
 }
 
 /* Buttons */
@@ -320,4 +358,149 @@ p8{
 .warning:hover {
   background: #F7b733;
   color: white;
+}
+
+/* Arrow down */
+#arrow-down{
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  padding-top: 5rem;
+  text-decoration: none;
+}
+
+#arrow-down a{
+  color: white;
+}
+
+#arrow-down a:hover{
+  color: grey;
+}
+
+#arrow-up{
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  padding-bottom: 5rem;
+}
+
+#arrow-up a{
+  color: white;
+}
+
+#arrow-up a:hover{
+  color: grey;
+}
+
+/*Smooth Scrolling */
+html{
+  scroll-behavior: smooth;
+}
+
+/* Footer styling*/
+footer{
+  background-color:none;
+  opacity: 0.6;
+  color:white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  padding-bottom: none;
+}
+
+footer :hover{
+  opacity: 0.9;
+  background-color: white;
+  color: black;
+}
+
+footer a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Why TimeTurner */
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  font-size: 2rem;
+
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#why-us{
+  background-image: url("https://img.freepik.com/free-photo/seamless-wood-texture-background_105762-62.jpg?size=626&ext=jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  border: none;
+  padding: 3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  font-family:'Merriweather', serif;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#why-us :hover{
+  opacity: 1;
+}
+
+h3{
+  font-family:'Merriweather', serif;
+  text-align: center;
+  color: #242222;
+  font-size: 4rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25.0%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  margin: 8px;
+  text-align: center;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+p5{
+  color:grey;
 }

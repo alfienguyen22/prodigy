@@ -1,0 +1,13 @@
+:root{
+    background-color: black;
+}
+
+h1{
+    font-size: 4rem;
+    float: right;
+    font-weight: 200;
+    font-variant: initial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    margin-right: 4rem;
+}
