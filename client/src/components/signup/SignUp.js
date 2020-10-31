@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import { registerUser } from "../../actions/authActions";
 import TextFieldGroup from "../common/TextFieldGroup";
 
-import "../../css/CreateAccount.css";
+import "../../css/signup/SignUp.css";
 
 class CreateAccount extends Component {
     constructor(props) {
@@ -50,11 +50,10 @@ class CreateAccount extends Component {
     render() {
         const { errors } = this.state;
         return (
-            <form className="form-container" onSubmit={this.onSubmit}>
+            <form className="modal-content" onSubmit={this.onSubmit}>
                 <div className="container">
                     <h2>Đăng Ký</h2>
                     <p>Điền thông tin để đăng ký tài khoản.</p>
-                    <hr />
                     <small className="d-block pb-3">* yêu cầu</small>
                     <TextFieldGroup
                         placeholder="* Họ và Tên của bạn"
@@ -113,10 +112,10 @@ class CreateAccount extends Component {
                         .
                     </p>
                     <div className="clearfix">
-                        <Link to="/" className="cancel-btn">
-                            Huỷ
-                        </Link>
-                        <button type="submit" className="submit-btn">
+                        <button type="button" className="cancel-btn">
+                            <Link to="/">Huỷ</Link>
+                        </button>
+                        <button type="submit" className="signup-btn">
                             Đăng Ký
                         </button>
                     </div>
