@@ -1,0 +1,153 @@
+/* Style the navigation bar */
+
+.navbar {
+    width: 100%;
+    /* background-color: #4abdac; */
+    overflow: hidden;
+    color: white;
+    background-image: url("https://image.freepik.com/free-photo/wooden-texture_1208-334.jpg");
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navbar links */
+
+.navbar a {
+    float: left;
+    /* color: #242222; */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar links on mouse-over */
+
+.navbar a:hover {
+    color: grey;
+}
+
+/* Current/active navbar link */
+
+.navbar a.active {
+    background-color: #fe491a;
+    color: #242222;
+}
+
+.navbar-center a:hover {
+    color: white;
+}
+
+.navbar-center a {
+    float: none;
+    position: absolute;
+    left: 42%;
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.navbar-center :hover {
+    font-size: 3.4rem;
+    left: 41%;
+    color: white;
+}
+
+.navbar-right {
+    float: right;
+}
+
+/* The dropdown container */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    /* color: #242222; */
+    color: whitesmoke;
+    background-color: inherit;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the search box inside the navigation bar */
+
+.navbar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    background: #f1f1f1;
+    width: 12rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    -webkit-transition: width 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+
+.navbar input[type=text]:focus {
+    width: 30.4%;
+}
+
+.navbar input[type=text] {
+    border: 1px solid #ccc;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
