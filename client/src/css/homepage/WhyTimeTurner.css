@@ -1,0 +1,70 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+h3 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #242222;
+    font-size: 4rem;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+/* Clear floats after image containers */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#why-us {
+    background-image: url("https://img.freepik.com/free-photo/seamless-wood-texture-background_105762-62.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    border: none;
+    padding: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    font-family: 'Merriweather', serif;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#why-us :hover {
+    opacity: 1;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 25.0%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    margin: 8px;
+    text-align: center;
+}
+
+p {
+    color: grey;
+}
