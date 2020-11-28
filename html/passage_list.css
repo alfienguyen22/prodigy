@@ -39,7 +39,7 @@
 }
 
 .psgContainer tr:nth-child(odd) {
-     background-color: white;
+     background-color: rgb(51, 66, 85);
 }
 
 .psgContainer a {
