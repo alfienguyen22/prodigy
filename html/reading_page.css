@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* grid view styling */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.interface::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* MAIN STYLING */
+.interface {
+    margin: 0 2vw 5vw 2vw;
+    padding: 5vh 0 5vh 0;
+    background-color: ivory;
+    border-radius: 1%;
+}
+
+/* back button */
+.backButton{
+    margin: 4vh 0 4vh 3vw;
+}
+
+.backButton button {
+    padding: 1vh;
+}
+
+/* THE PASSAGE DISPLAY */
+
+.passageTitle {
+    margin: 2vh 0 3vh 0;
+    text-align: center;
+    font-size: 2.5vh;
+}
+.passage p {    
+    margin-bottom: 2vh;
+    font-size: 3vh;
+    text-align: justify;
+    text-indent: 2.5vw;
+}
+
+/* THE QUESTION SECTION */
+#questionDisplay {
+    border-left: 1px solid black;
+}
+.question {
+    margin-bottom: 5vh;
+}
+
+.qtitle {
+    margin: 2vh 0 3vh 0;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+/* each question style */
+.questionTitle {
+    margin-bottom: 2vh;
+}
+
+.questionTitle p {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.answer {
+    height: 6vh;
+    width: 100%;
+    margin: 1vh 0 1vh 0;
+    padding-left: 1vw;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+/* submit */
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit button {
+    padding: 1vh;
+}

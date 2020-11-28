@@ -13,6 +13,7 @@
 
 #headline {
      text-align: center;
+     color: white;
      font-size: 4vh;
      margin-top: 8vh;
      margin-bottom: 8vh;
@@ -35,6 +36,10 @@
    
 .psgContainer tr:nth-child(even) {
      background-color: #1c272e;
+}
+
+.psgContainer tr:nth-child(odd) {
+     background-color: white;
 }
 
 .psgContainer a {
