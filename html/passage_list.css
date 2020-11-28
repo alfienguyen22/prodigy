@@ -1,0 +1,35 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+#headline {
+     text-align: center;
+     font-size: 4vh;
+     margin-top: 8vh;
+     margin-bottom: 8vh;
+}
+
+/* STYLE TABLE */
+.psgContainer {
+     margin: 0 5vw 10vh 5vw;
+     font-size: 3vh;
+     border-collapse: collapse;
+     width: 90%;
+}
+
+/* style table elements */
+.psgContainer td, th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+}
+   
+.psgContainer tr:nth-child(even) {
+     background-color: #dddddd;
+}
+
+.psgContainer a {
+     color: blue;
+}
