@@ -149,7 +149,6 @@
 body{
   margin: auto;
   background-image: url("https://image.freepik.com/free-photo/wooden-texture_1208-334.jpg");   
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -218,7 +217,7 @@ body{
 form {
     font-size: 2rem;
     font-weight: 300;
-    font-family: 'Sofia';
+    font-family: 'Merriweather', serif;
 }
 
 h2{
